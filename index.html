@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/index.js"></script>
+</head>
+<body>
+    <main>
+
+<h2 class="form-head">Contact form</h2>
+<p class="form-add">Pleas fill information and we'll be sending your order.</p>
+
+
+<form class="reg-form">
+    <label class="form-label">
+      <span class="label-caption">Your name:</span>
+      <input
+        class="form-input"
+        type="text"
+        name="user-name"
+        placeholder="first name"
+        minlength="2"
+        maxlength="20"
+        pattern="[A-Z][a-z]{1,19}"
+        required
+        autofocus
+        tabindex="1"
+      />
+
+      <input
+        class="form-input"
+        type="text"
+        name="user-lastName"
+        placeholder="last name"
+        minlength="2"
+        maxlength="20"
+        pattern="[A-Z][a-z]{1,19}"
+        required
+        autofocus
+        tabindex="2"
+      />
+    </label>
+
+    <label class="form-label">
+      <span class="label-caption">Your email:</span>
+      <input
+        class="form-input"
+        type="email"
+        name="user-email"
+        placeholder="your_gmail@.com"
+        required
+        tabindex="3"
+      />
+    </label>
+
+    <label class="form-label">
+      <span class="label-caption">Phone*:</span>
+      <input
+        class="form-input"
+        type="telephone"
+        name="user-telephone"
+        pattern="\d{3}-\d{3}-\d{4}"
+        placeholder="+38"
+        required
+        tabindex="4"
+      />
+      <input
+      class="form-input"
+      type="telephone"
+      name="user-telephone"
+      pattern="\d{3}-\d{3}-\d{4}"
+     required
+      tabindex="4"
+    />
+
+    <input
+        class="form-input"
+        type="telephone"
+        name="user-telephone"
+        pattern="\d{3}-\d{3}-\d{4}"
+        required
+        tabindex="4"
+      />
+
+    </label>
+
+    <label class="form-label">
+      <span class="label-caption">Messege subject*:</span>
+      <select name="select">
+        <option value="value2" selected>Return</option>
+        <option value="value3">Formalisation</option>
+        <option value="value1">Other</option>
+        </select>
+    </label>
+
+    <label class="form-label">
+      <span class="label-caption">Message*:</span>
+      <textarea id="story" 
+      name="story" 
+      rows="5" 
+      cols="33">
+        Чекаю на повідомлення...
+        </textarea>
+        
+    </label>
+     <button type="submit" class="submit-btn">Register</button>
+  </form>
+
+ </main>
+    
+</body>
+</html>
